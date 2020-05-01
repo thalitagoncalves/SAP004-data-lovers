@@ -1,17 +1,15 @@
 import data from './data/rickandmorty/rickandmorty.js';
 
+/* let newELement = document.createElement("div");
+let myData = document.createTextNode(data.results.map(({name, status, species, image}) => `
+Nome: ${name}
+Status: ${status}
+Espécie: ${species}`))
+let gettingElement = newELement.appendChild(myData);
+document.getElementById("listening").appendChild(gettingElement); */
 
-//function showData() {
-//    let firstELement = document.getElementById("listening");
-//    let tela = document.createElement("div");
-//    for (let i = 0; i <= data.results; i++) {
-//        tela.classList.add("card-container");
-//        tela.innerHTML = `<img src=${data.results.image[i]}>
-//        <h2>Nome:</h2>
-//        <p>Gênero</p>`
-//    }
-//    firstELement.appendChild(tela);
-//    return tela;
-//}
-
-//showData();
+document.getElementById('root').innerHTML = data.results.map((item) => `
+  <aside>
+    <img src="${item.image}" alt="${item.name}">
+  </aside>
+`)
