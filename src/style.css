@@ -47,14 +47,10 @@ button:hover {
 }
 
 .cards {
-    display: inline-table;
+    display: inline-block;
     border: 2px solid red;
     text-align: center;
     width: fit-content;
     margin-top: 30px;
-}
-
-.listening {
-    text-align: center;
-    width: fit-content;
+    font-family: 'Amatic SC', cursive;
 }
