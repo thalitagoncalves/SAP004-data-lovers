@@ -44,3 +44,13 @@ button:hover {
 .search-input {
     float: right;
     margin: 11.5px 30px 11.5px 0px;
+}
+
+.cards {
+    display: inline-block;
+    border: 2px solid red;
+    text-align: center;
+    width: fit-content;
+    margin-top: 30px;
+    font-family: 'Amatic SC', cursive;
+}
