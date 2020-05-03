@@ -1,4 +1,4 @@
-import functions from './data.js';
+// import functions from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
 document.getElementById('listening').innerHTML = data.results.map((item) => `
