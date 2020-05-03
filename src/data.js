@@ -1,10 +1,7 @@
-// funções de exemplo
+import data from './data/rickandmorty/rickandmorty.js';
 
-export const example = () => {
-  return 'example';
-};
+const sortBy = {
+ // cipher: function 
+} 
 
-export const anotherExample = () => {
-  return 'OMG';
-};
-
+export default
