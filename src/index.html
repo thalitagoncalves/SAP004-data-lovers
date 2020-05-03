@@ -8,45 +8,46 @@
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <img src="Imagens/logo-rickandmorty.png" alt="logo rickandmorty" class="imagem">
+    <header>      
+      <nav class="navegation">       
+        <ul>
+          <li><a href="index.html.html" >HOME</a></li>
+          <li><a href="planets.html.html">PLANETAS</a></li>
+          <li><a href="episodes.html.html">EPÍSODIOS RICK AND MORTY</a></li>
+          <input type="search" id="typed-text" placeholder="Buscar Personagem" class="search-text">          
+    </nav>    
+    <section class="img-logo">
+      <img src="Imagens/logo-rickandmorty.png" alt="logo rickandmorty" class="imagem-logo">    
+    </section>
     </header>
-    <nav>
-      <div class="actions">
-        <button a href="href="index.html id="return-home" class="btn">Home</a></button>
-        <button id="btn-order-az" class="btn">Ordenar A-Z</button>
-        <button id="btn-order-za" class="btn">Ordenar Z-A</button>
-        <select id="select-gender" class="btn">
-          <option value="gender" selected disabled>Gênero</option>
-          <option value="undefined">Indefinido</option>
-          <option value="male">Macho</option>
-          <option value="female">Fêmea</option>
-       </select>
-       <select id="select-species" class="btn">
-         <option value="specie" selected disabled>Espécie</option>
-         <option value="human">Humano</option>
-         <option value="humanoide">Humanoide</option>
-         <option value="alien">Alien</option>
-         <option value="animal">Animal</option>
-        </select>
-        <select id="select-status" class="btn">
-          <option value="status" selected disabled>Status</option>
-          <option value="undefined">Indefinido</option>
-          <option value="alive">Vivo</option>
-          <option value="dead">Morto</option>
-        </select>
-        <form class="search-input">
-          <input type="text" id="typed-text" placeholder="Buscar Personagem" class="search-text">
-          <button id="search-btn" class="search-btn-text"><img src="Imagens/search-icon.png"></button>
-        </form>
-        </div>
-    </nav>
+    <aside class="open-menu">
+      <button id="btn-order-az" class="btn">Ordenar A-Z</button>
+      <button id="btn-order-za" class="btn">Ordenar Z-A</button>
+      <select id="select-gender" class="btn">
+        <option value="gender" selected disabled>Gênero</option>
+        <option value="undefined">Indefinido</option>
+        <option value="male">Macho</option>
+        <option value="female">Fêmea</option>
+      </select>
+      <select id="select-species" class="btn">
+        <option value="specie" selected disabled>Espécie</option>
+        <option value="human">Humano</option>
+        <option value="humanoide">Humanoide</option>
+        <option value="alien">Alien</option>
+        <option value="animal">Animal</option>
+      </select>
+      <select id="select-status" class="btn">
+        <option value="status" selected disabled>Status</option>
+        <option value="undefined">Indefinido</option>
+        <option value="alive">Vivo</option>
+        <option value="dead">Morto</option>
+      </select>  
+    </aside>       
     <div id= "perc" class="info" class="invisible"></div>
     <main class="scroll">
-      <div id="listening" class="card-container"></div>
+        <div id="listening"></div>
     </main> 
   
-    <!-- <div id="root"></div> -->
     <script src="main.js" type="module"></script>
   </body>
 </html>
