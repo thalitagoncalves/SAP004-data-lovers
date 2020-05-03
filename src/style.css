@@ -1,19 +1,77 @@
-header{
+body{
+    padding: 0;
+    margin: 0;
+  
+    
+} 
+.imagem-logo{
+    width: 50%;    
+    margin-left: 30%;
+   
+} 
+.navegation ul {
+    margin: 0px;
+    background-color: #3f59af;
+    list-style: none;
+    
+}
+.navegation ul li {
+    display: inline;
+    
+}
+.navegation ul li a {    
+    margin-right: 50px; 
+    padding: 10px 10px;
+    display: inline-block;
+    color: #FFFAFA;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Amatic SC', cursive;
+    font-size: 18px;
+}
+.navegation ul li a:hover {
+    color: #39BBF2;
+}
+.search-text {    
+    float: right;
+    margin: 5.5px 60px 5.5px 0px;    
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
+    font-size: 20px;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    justify-content: center; 
+}      
+.search-text:focus {
+    width: 200px;
+    border-bottom: solid 1px #25B01C;
+    outline: none;
 }
 
-.imagem{
-    max-width: 50%;
+.img-logo {
+    background-color: #25B01C;
 }
+
+
+.open-menu {
+    width: auto;
+    background-color: #F8F669;
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-top: 3%;
+}
+aside ul {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10%;
+    margin: 0%;
+    
+}    
 
 .btn {
     float: left;
     margin: 11.5px 30px 11.5px 0px;
     display: flex;
-    font-size: 19px;
+    font-size: 20px;
     font-family: 'Amatic SC', cursive;
     font-weight: bold;
     justify-content: center;    
@@ -22,30 +80,14 @@ header{
     -ms-transition: all 300ms linear;
     -o-transition: all 300ms linear;
     transition: all 300ms linear;
-    border: 2px solid #4682B4;
+    border: 2px solid #39BBF2;
 }
 
 button:hover {
-    background-color: cornflowerblue; 
+    background-color: #25B01C 
    
 }
-.search-input::placeholder {
-    color:  cornflowerblue;
-}
-.search-btn {
-    border: none;
-    background-color: #fff;
-    padding: 0;
-}
 
-.search-btn-text img{
-    width: 25px;
-    height: 25px;
-}
-.search-input {
-    float: right;
-    margin: 11.5px 30px 11.5px 0px;
-}
 
 .cards {
     display: inline-block;
