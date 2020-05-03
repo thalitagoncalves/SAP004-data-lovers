@@ -46,6 +46,7 @@ body{
     border-bottom: solid 1px #25B01C;
     outline: none;
 }
+
 .img-logo {
     background-color: #25B01C;
 }
@@ -95,4 +96,8 @@ button:hover {
     width: fit-content;
     margin-top: 30px;
     font-family: 'Amatic SC', cursive;
+}
+
+main {
+    padding: 0em 17em;
 }
