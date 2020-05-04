@@ -1,4 +1,4 @@
-body{  
+body{
     padding: 0;
     margin: 0;
   
@@ -9,7 +9,7 @@ body{
     margin-left: 30%;
    
 } 
-.navegation ul {    
+.navegation ul {
     margin: 0px;
     background-color: #3f59af;
     list-style: none;
@@ -46,37 +46,21 @@ body{
     border-bottom: solid 1px #25B01C;
     outline: none;
 }
-
 .img-logo {
     background-color: #25B01C;
 }
-
-<<<<<<< HEAD
-.open-menu{
-    margin-top: 10%;    
-    width: 200px;
-    height: 200px;    
-=======
-
 .open-menu {
     float: left;
->>>>>>> b96b142b501ebc6c560b8ed73fa5906feaa54d5b
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-<<<<<<< HEAD
-    
-}    
-
-=======
     padding-left: 20px;
     margin-right: 6%;
     margin-left: 3%;
     margin-top: 5%;   
 }
->>>>>>> b96b142b501ebc6c560b8ed73fa5906feaa54d5b
 .btn {
     float: left;
     margin: 11.5px 30px 11.5px 0px;
@@ -92,14 +76,11 @@ body{
     transition: all 300ms linear;
     border: 2px solid #39BBF2;
 }
-
 button:hover {
     background-color: #25B01C 
    
 }
 .cards {
-    
-   
     display: inline-block;
     border: 2px solid red;
     text-align: center;
@@ -107,7 +88,6 @@ button:hover {
     margin-top: 30px;
     font-family: 'Amatic SC', cursive;
 }
-
 main {
     padding: 0em 17em;
 }
