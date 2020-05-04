@@ -53,20 +53,17 @@ body{
 
 
 .open-menu {
-    width: auto;
-    background-color: #F8F669;
-    margin-right: 2%;
-    margin-left: 2%;
-    margin-top: 3%;
-}
-aside ul {
+    float: left;
     display: flex;
     flex-direction: column;
-    padding-bottom: 10%;
-    margin: 0%;
-    
-}    
-
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 20px;
+    margin-right: 6%;
+    margin-left: 3%;
+    margin-top: 5%;   
+}
 .btn {
     float: left;
     margin: 11.5px 30px 11.5px 0px;
@@ -87,8 +84,6 @@ button:hover {
     background-color: #25B01C 
    
 }
-
-
 .cards {
     display: inline-block;
     border: 2px solid red;

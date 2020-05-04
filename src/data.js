@@ -1,6 +1,6 @@
 import data from './data/rickandmorty/rickandmorty.js';
 
-export const sortByAZ = () => {data.results.sort((a,z) => {
+/* export const sortByAZ = () => {data.results.sort((a,z) => {
     if (a.name > z.name) {
         return 1;
     } if (a.name > z.name) {
@@ -12,3 +12,8 @@ export const sortByAZ = () => {data.results.sort((a,z) => {
 }
 
 
+ */
+
+ /* function sortByAZ(data, results) {
+     
+ } */
