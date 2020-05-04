@@ -1,4 +1,4 @@
-import {sortByAZ} from './data.js';
+import {sortByAZ, sortByZA} from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
 function myCards(data) {
@@ -13,4 +13,16 @@ function myCards(data) {
 }
 myCards(data.results);
 
-document.getElementById("btn-order-az").addEventListener("click", sortByAZ()); 
+function printCharacterAZ() {
+  const orderAZ = sortByAZ()
+  return myCards(orderAZ);
+}
+
+function printCharacterZA() {
+  const orderZA = sortByZA()
+  return myCards(orderZA)
+}
+
+document.getElementById("btn-order-az").addEventListener("click", printCharacterAZ);
+document.getElementById("btn-order-za").addEventListener("click", printCharacterZA);
+
