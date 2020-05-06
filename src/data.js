@@ -14,4 +14,6 @@ import data from './data/rickandmorty/rickandmorty.js';
      return alphabeticOrder().slice(0, 494);
  }
 
-export const sortByZA = () => sortByAZ().reverse();
+export function sortByZA() {
+    return sortByAZ().reverse();
+}

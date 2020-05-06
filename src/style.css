@@ -1,17 +1,18 @@
-body{
-    padding: 0;
-    margin: 0;
-  
-    
+html, body{
+    background-color: #8AEAFF;
+    background-attachment: fixed;
+    padding: 0%;
+    margin: 0%;
 } 
+
 .imagem-logo{
     width: 50%;    
-    margin-left: 30%;
+    margin-left: 25%;
    
 } 
 .navegation ul {
     margin: 0px;
-    background-color: #3f59af;
+    background-color: #5C468C;
     list-style: none;
     
 }
@@ -48,7 +49,7 @@ body{
 }
 
 .img-logo {
-    background-color: #25B01C;
+    background-color: #23BF0B;
 }
 
 
@@ -84,15 +85,29 @@ button:hover {
     background-color: #25B01C 
    
 }
-.cards {
-    display: inline-block;
-    border: 2px solid red;
-    text-align: center;
-    width: fit-content;
-    margin-top: 30px;
-    font-family: 'Amatic SC', cursive;
+
+#listening {
+    padding: 0em 19em;
 }
 
-main {
-    padding: 0em 17em;
+.card-container {
+    display: inline-block;
+    border: 8px solid #23BF0B;
+    border-radius: 9px;
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin: 30px 5Opx 30px 30px;
+    box-shadow: 50px;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    box-shadow: 10px 10px 10px black;
+    margin-top: 30px;
+}
+
+.card-image {
+    width: 160px;
+    height: 170px;
+    padding: 3px;
+
 }
