@@ -1,6 +1,6 @@
 import data from './data/rickandmorty/rickandmorty.js';
 
- export const alphabeticOrder = () => data.results.sort((a,z) => {
+const alphabeticOrder = () => data.results.sort((a,z) => {
      if (a.name > z.name) {
          return 1;
      }
@@ -10,8 +10,17 @@ import data from './data/rickandmorty/rickandmorty.js';
      return 0;
  } );
 
- export function sortByAZ() {
+export function sortByAZ() {
      return alphabeticOrder().slice(0, 494);
  }
 
-export const sortByZA = () => sortByAZ().reverse();
+export function sortByZA() {
+    return sortByAZ().reverse();
+}
+
+export const filters = {
+    searchByName: function filterName(character) {
+        let searchArea = "";
+        return (character.name === searchArea);
+    },
+}
