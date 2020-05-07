@@ -1,4 +1,4 @@
-import {sortByAZ, sortByZA} from './data.js';
+import {sortByAZ, sortByZA, filters} from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
 function myCards(data) {
@@ -14,15 +14,25 @@ function myCards(data) {
 myCards(data.results);
 
 function printCharacterAZ() {
-  const orderAZ = sortByAZ()
-  return myCards(orderAZ);
+  return myCards(sortByAZ());
 }
 
 function printCharacterZA() {
-  const orderZA = sortByZA()
-  return myCards(orderZA)
+  return myCards(sortByZA());
+}
+
+function searchCharacter(event) {
+  if (event.keyCode === 13) {
+    let character = document.getElementById("typed-text").value;
+    character.myCards.filter(filters.searchByName(character));
+  }
+}
+
+function printSelectedCharacter() {
+  const showCharacter = searchCharacter(event);
+  return myCards(showCharacter);
 }
 
 document.getElementById("btn-order-az").addEventListener("click", printCharacterAZ);
 document.getElementById("btn-order-za").addEventListener("click", printCharacterZA);
-
+document.getElementById("typed-text").addEventListener("keypress", printSelectedCharacter);

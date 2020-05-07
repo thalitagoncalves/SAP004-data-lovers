@@ -1,5 +1,5 @@
 html, body{
-    background-color: #8AEAFF;
+    background-color: #033E47;
     background-attachment: fixed;
     padding: 0%;
     margin: 0%;
@@ -12,7 +12,7 @@ html, body{
 } 
 .navegation ul {
     margin: 0px;
-    background-color: #5C468C;
+    background-color: #0E6973;
     list-style: none;
     
 }
@@ -49,7 +49,7 @@ html, body{
 }
 
 .img-logo {
-    background-color: #23BF0B;
+    background-color: #160A40;
 }
 
 
@@ -92,7 +92,8 @@ button:hover {
 
 .card-container {
     display: inline-block;
-    border: 8px solid #23BF0B;
+    background-color: #31B0CC;
+    border: 5px solid #D4D952;
     border-radius: 9px;
     text-align: center;
     width: auto;
@@ -101,13 +102,12 @@ button:hover {
     box-shadow: 50px;
     font-family: 'Amatic SC', cursive;
     font-weight: bold;
-    box-shadow: 10px 10px 10px black;
+    box-shadow: 8px 8px 8px black;
     margin-top: 30px;
 }
 
 .card-image {
     width: 160px;
     height: 170px;
-    padding: 3px;
-
+    
 }
