@@ -1,6 +1,6 @@
 import data from './data/rickandmorty/rickandmorty.js';
 
- export const alphabeticOrder = () => data.results.sort((a,z) => {
+export const alphabeticOrder = () => data.results.sort((a,z) => {
      if (a.name > z.name) {
          return 1;
      }
@@ -15,3 +15,9 @@ import data from './data/rickandmorty/rickandmorty.js';
  }
 
 export const sortByZA = () => sortByAZ().reverse();
+
+export function typeStatus(characteres){
+    return (characteres.results.status === "Alive");
+}
+
+onsole
