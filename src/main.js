@@ -1,7 +1,7 @@
-import {sortByAZ, sortByZA, filters} from './data.js';
+import {sortByAZ, sortByZA, filterGender} from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
-function myCards(data) {
+function showCards(data) {
   document.getElementById('listening').innerHTML = data.map((item) => `
     <div class="card-container">
     <img src="${item.image}" class="card-image">
@@ -11,28 +11,21 @@ function myCards(data) {
   </div>
 `)
 }
-myCards(data.results);
+showCards(data.results);
 
 function printCharacterAZ() {
-  return myCards(sortByAZ());
+  return showCards(sortByAZ());
 }
 
 function printCharacterZA() {
-  return myCards(sortByZA());
+  return showCards(sortByZA());
 }
 
-function searchCharacter(event) {
-  if (event.keyCode === 13) {
-    let character = document.getElementById("typed-text").value;
-    character.myCards.filter(filters.searchByName(character));
-  }
+function printCharacterFiltered() {
+  return showCards(filterGender())
 }
 
-function printSelectedCharacter() {
-  const showCharacter = searchCharacter(event);
-  return myCards(showCharacter);
-}
 
 document.getElementById("btn-order-az").addEventListener("click", printCharacterAZ);
 document.getElementById("btn-order-za").addEventListener("click", printCharacterZA);
-document.getElementById("typed-text").addEventListener("keypress", printSelectedCharacter);
+document.getElementById("select-gender").addEventListener("change", printCharacterFiltered)

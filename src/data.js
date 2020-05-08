@@ -18,9 +18,8 @@ export function sortByZA() {
     return sortByAZ().reverse();
 }
 
-export const filters = {
-    searchByName: function filterName(character) {
-        let searchArea = "";
-        return (character.name === searchArea);
-    },
-}
+
+export const filterGender = () => data.results.filter(function(characterGender) {
+    return (characterGender.gender === "unknown")
+})
+
