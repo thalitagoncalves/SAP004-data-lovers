@@ -1,20 +1,23 @@
-html, body{
+body{
     background-color: #033E47;
     background-attachment: fixed;
     padding: 0%;
     margin: 0%;
+    font-size: 100%;
 } 
 
 .imagem-logo{
-    width: 50%;    
+    width: 60%;    
     margin-left: 25%;
+    padding-top: 50px;
    
 } 
 .navegation ul {
-    margin: 0px;
+    width: 100%;
+    position: fixed;
+    margin: 0px;    
     background-color: #0E6973;
-    list-style: none;
-    
+   
 }
 .navegation ul li {
     display: inline;
@@ -39,7 +42,6 @@ html, body{
     display: flex;
     font-size: 20px;
     font-family: 'Amatic SC', cursive;
-    font-weight: bold;
     justify-content: center; 
 }      
 .search-text:focus {
@@ -85,7 +87,6 @@ button:hover {
 #listening {
     padding: 0em 19em;
 }
-
 .card-container {
     display: inline-block;
     background-color: #31B0CC;
@@ -107,5 +108,131 @@ button:hover {
     height: 170px;
     
 }
+footer {    
+    font-size: 12px;
+    bottom: 0px;
+    width: 100%;
+    padding: 14px;
+    text-align: center;
+    background-color: #3e9bb7;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(Imagens/asfalt-dark.png);
+    border-top: 6px solid #17a8af;
+}
+footer a {
+	color: #fff;
+	text-decoration: underline
+} 
 
 
+
+
+@media only screen and (max-width: 800px) { 
+
+    .navegation{
+        height: 100px;
+    }
+    .navegation ul {
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        float: left;
+        padding: 0%;
+    }
+    .img-logo{
+        text-align: center;
+    }
+    .imagem-logo{        
+        margin-left: 0%;
+        padding-top: 0px;
+    }
+    .navegation ul li a {   
+        margin: 0px;
+        padding: 0px;
+        display: inline-block;
+        color: #FFFAFA;
+        font-weight: bold;
+        text-decoration: none;
+        font-family: 'Amatic SC', cursive;
+        font-size: 16px;
+    }
+    .ul-style{
+        width: 100%;
+    }
+    .navegation ul li a:hover {
+        color: #39BBF2;
+    }
+    .search-text {   
+        float:left;
+        margin: 0%;
+        display: flex;
+        font-size: 20px;
+        font-family: 'Amatic SC', cursive;
+        justify-content: center; 
+    }      
+    .search-text:focus {        
+        border-bottom: solid 1px #25B01C;
+        outline: none;
+    }
+    .open-menu {        
+        width: 100%;
+        flex-direction: column;
+        height: 100px;
+        flex-wrap: wrap;
+        display: flex;        
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-left: 0px;
+        margin-right: 0%;
+        margin-left: 0%;
+        margin-top: 3%;   
+    }
+    .btn {
+        float: left;
+        margin: 5.5px 10px 5.5px 0px;
+        display: flex;
+        font-size: 18px;
+        font-family: 'Amatic SC', cursive;
+        font-weight: bold;
+        justify-content: center;    
+        -webkit-transition: all 300ms linear;
+        -moz-transition: all 300ms linear;
+        -ms-transition: all 300ms linear;
+        -o-transition: all 300ms linear;
+        transition: all 300ms linear;
+        border: 2px solid #39BBF2;
+    }
+    button:hover {
+        background-color: #25B01C 
+       
+    }
+    .scroll{
+    text-align: -webkit-center;
+    }    
+    #listening {
+        padding: 0em;
+        width: 53.2%;
+    }    
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        background-color: #31B0CC;
+        border: 5px solid #D4D952;
+        border-radius: 9px;
+        text-align: center;        
+        height: auto;        
+        box-shadow: 50px;
+        font-family: 'Amatic SC', cursive;
+        font-weight: bold;
+        box-shadow: 8px 8px 8px black;
+        margin-top: 30px;
+    }
+    footer {    
+        padding: 0px;
+    }
+    
+    
+    
+}

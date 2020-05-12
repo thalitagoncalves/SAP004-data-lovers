@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Rick and Morty</title>
-    <link rel="shortcut icon" type="image/x-icon" href="Imagens/rickandmortyportalpequeno.jpg ">
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <header>      
-      <nav class="navegation">       
-        <ul>
-          <li><a href="index.html.html" >HOME</a></li>
-          <li><a href="planets.html.html">PLANETS</a></li>
-          <li><a href="episodes.html.html">EPISODES RICK AND MORTY</a></li>
-          <input type="search" id="typed-text" placeholder="Search by name ..." class="search-text">      
-        </ul>      
-     </nav>    
+
+<head>
+  <meta charset="utf-8">
+  <title>Rick and Morty</title>
+  <meta name="author" content="Alessandra Marinho e Thalita Gonçalves">  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">  
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="Imagens/rickandmortyportalpequeno.jpg ">
+</head>
+
+<body>
+  <header>
+    <nav class="navegation">
+      <ul class="ul-style">
+        <li><a href="index.html.html">HOME</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="episodes.html.html">EPISODES RICK AND MORTY</a></li>
+        <li><input type="search" id="typed-text" placeholder="Search by name ..." class="search-text"></li>
+      </ul>
+    </nav>
     <section class="img-logo">
-      <img src="Imagens/logo-rickandmorty.png" alt="logo rickandmorty" class="imagem-logo">    
+      <img src="Imagens/logo-rickandmorty.png" alt="logo rickandmorty" class="imagem-logo">
     </section>
-    </header>
+   </header>
     <aside class="open-menu">
       <button id="btn-order-az" class="btn">Ordenar A-Z</button>
       <button id="btn-order-za" class="btn">Ordenar Z-A</button>
@@ -47,8 +52,12 @@
     <div id= "perc" class="info" class="invisible"></div>
     <main class="scroll">
         <div id="listening"></div>
-    </main> 
-  
-    <script src="main.js" type="module"></script>
-  </body>
+    </main>
+  <footer>
+    <p>Desenvolvido por <a href="https://github.com/alessandramarinho" target="_blank">Alessandra Marinho</a> e <a href="https://github.com/thalitagoncalves" target="_blank">Thalita Gonçalves</a></p>
+    <p>O código fonte está disponível no <a href="https://alessandramarinho.github.io/SAP004-data-lovers/src/" target="_blank">GitHub</a></p>
+  </footer>
+
+  <script src="main.js" type="module"></script>
+</body>
 </html>

@@ -16,7 +16,6 @@ showCards(data.results);
 function printCharacterAZ() {
   return showCards(sortByAZ());
 }
-
 function printCharacterZA() {
   return showCards(sortByZA());
 }
