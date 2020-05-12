@@ -1,4 +1,4 @@
-import {sortByAZ, sortByZA, filters} from './data.js';
+import {sortByAZ, sortByZA, filterData} from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
 function showCards(data) {
@@ -23,38 +23,18 @@ function printCharacterZA() {
 
 let selectGender = document.querySelector(".select-gender");
 let selectSpecies = document.querySelector(".select-species");
-let selectStatus = document.querySelector(".select-status");
+let selectStatus = document.querySelector(".select-status"); 
 
 function printGenderFiltered() {
-  if (selectGender.value === "undefined") {
-    return showCards(filters.undefGender());
-  } else if (selectGender.value === "male") {
-    return showCards(filters.genderMale());
-  } else if (selectGender.value === "female") {
-    return showCards(filters.genderFemale());
-  }
+  return showCards(filterData("gender", selectGender.value));
 }
 
 function printSpeciesFiltered() {
-  if (selectSpecies.value === "human") {
-    return showCards(filters.humanSpecie());
-  } else if (selectSpecies.value === "humanoide") {
-    return showCards(filters.humanoidSpecie());
-  } else if (selectSpecies.value === "alien") {
-    return showCards(filters.alienSpecie());
-  } else if (selectSpecies.value === "animal") {
-    return showCards(filters.animalSpecie);
-  }
+  return showCards(filterData("species", selectSpecies.value));
 }
 
 function printStatusFiltered() {
-  if (selectStatus.value === "undefined") {
-    return showCards(filters.statusUnknown());
-  } else if (selectStatus.value === "alive") {
-    return showCards(filters.statusAlive());
-  } else if (selectStatus.value === "dead") {
-    return showCards(filters.statusDead());
-  }
+  return showCards(filterData("status", selectStatus.value))
 }
 
 document.getElementById("btn-order-az").addEventListener("click", printCharacterAZ);

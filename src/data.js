@@ -10,50 +10,12 @@ const alphabeticOrder = () => data.results.sort((a,z) => {
      return 0;
  } );
 
-export function sortByAZ() {
-     return alphabeticOrder().slice(0, 494);
- }
 
-export function sortByZA() {
-    return sortByAZ().reverse();
-}
+ export const sortByAZ = () => alphabeticOrder().slice(0, 494);
 
-export function filterDataBy (typeData, kindFiltred) {
-    data.results.filter(() => {
-        return typeData === kindFiltred
-    })
-}
+export const sortByZA = () => sortByAZ().reverse();
+  
+export const filterData = (typeData, condition) => data.results.filter((character) => {
+    return (character[typeData] === condition);
+})
 
-export const filters = {
-    undefGender: () => data.results.filter(function(characterGender) {
-        return (characterGender.gender === "unknown");
-    }),
-    genderMale: () => data.results.filter(function(characterGender) {
-        return (characterGender.gender === "Male");
-    }),
-    genderFemale: () => data.results.filter(function(characterGender) {
-        return (characterGender.gender === "Female");
-    }),
-
-    humanSpecie: () => data.results.filter(function(characterSpecie) {
-        return (characterSpecie.species === "Human");
-    }),
-    humanoidSpecie: () => data.results.filter(function(characterSpecie) {
-        return (characterSpecie.species === "Humanoide");
-    }),
-    alienSpecie: () => data.results.filter(function(characterSpecie) {
-        return (characterSpecie.species === "Alien");
-    }),
-    animalSpecie: () => data.results.filter(function(characterSpecie) {
-        return (characterSpecie.species === "Animal");
-    }),
-    statusUnknown: () => data.results.filter(function(characterStatus) {
-        return (characterStatus.status === "unknown");
-    }),
-    statusAlive: () => data.results.filter(function(characterStatus) {
-        return (characterStatus.status === "Alive");
-    }),
-    statusDead: () => data.results.filter(function(characterStatus) {
-        return (characterStatus.status === "Dead");
-    })
-}
