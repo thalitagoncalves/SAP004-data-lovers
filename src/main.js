@@ -1,4 +1,4 @@
-import {sortByAZ, sortByZA, filterGender} from './data.js';
+import {sortByAZ, sortByZA, filters} from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
 function showCards(data) {
@@ -21,11 +21,44 @@ function printCharacterZA() {
   return showCards(sortByZA());
 }
 
-function printCharacterFiltered() {
-  return showCards(filterGender())
+let selectGender = document.querySelector(".select-gender");
+let selectSpecies = document.querySelector(".select-species");
+let selectStatus = document.querySelector(".select-status");
+
+function printGenderFiltered() {
+  if (selectGender.value === "undefined") {
+    return showCards(filters.undefGender());
+  } else if (selectGender.value === "male") {
+    return showCards(filters.genderMale());
+  } else if (selectGender.value === "female") {
+    return showCards(filters.genderFemale());
+  }
 }
 
+function printSpeciesFiltered() {
+  if (selectSpecies.value === "human") {
+    return showCards(filters.humanSpecie());
+  } else if (selectSpecies.value === "humanoide") {
+    return showCards(filters.humanoidSpecie());
+  } else if (selectSpecies.value === "alien") {
+    return showCards(filters.alienSpecie());
+  } else if (selectSpecies.value === "animal") {
+    return showCards(filters.animalSpecie);
+  }
+}
+
+function printStatusFiltered() {
+  if (selectStatus.value === "undefined") {
+    return showCards(filters.statusUnknown());
+  } else if (selectStatus.value === "alive") {
+    return showCards(filters.statusAlive());
+  } else if (selectStatus.value === "dead") {
+    return showCards(filters.statusDead());
+  }
+}
 
 document.getElementById("btn-order-az").addEventListener("click", printCharacterAZ);
 document.getElementById("btn-order-za").addEventListener("click", printCharacterZA);
-document.getElementById("select-gender").addEventListener("change", printCharacterFiltered)
+selectGender.addEventListener("change", printGenderFiltered);
+selectSpecies.addEventListener("change", printSpeciesFiltered);
+selectStatus.addEventListener("change", printStatusFiltered);
