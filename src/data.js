@@ -10,11 +10,11 @@ export const alphabeticOrder = () => data.results.sort((a, z) => {
     return 0;
 });
 
-export function sortByAZ() {
-    return alphabeticOrder().slice(0, 494);
-}
+export const sortByAZ = () => alphabeticOrder().slice(0, 494);
 
-export function sortByZA() {
-    return sortByAZ().reverse();
-}
+export const sortByZA = () => sortByAZ().reverse();
+  
+export const filterData = (typeData, condition) => data.results.filter((character) => {
+    return (character[typeData] === condition);
+})
 

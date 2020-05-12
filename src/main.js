@@ -1,7 +1,7 @@
-import {sortByAZ, sortByZA} from './data.js';
+import {sortByAZ, sortByZA, filterData} from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
-function myCards(data) {
+function showCards(data) {
   document.getElementById('listening').innerHTML = data.map((item) => `
     <div class="card-container">
     <img src="${item.image}" class="card-image">
@@ -11,15 +11,33 @@ function myCards(data) {
   </div>
 `)
 }
-myCards(data.results);
+showCards(data.results);
 
 function printCharacterAZ() {
-  return myCards(sortByAZ());
+  return showCards(sortByAZ());
 }
 function printCharacterZA() {
-  return myCards(sortByZA());
+  return showCards(sortByZA());
+}
+
+let selectGender = document.querySelector(".select-gender");
+let selectSpecies = document.querySelector(".select-species");
+let selectStatus = document.querySelector(".select-status"); 
+
+function printGenderFiltered() {
+  return showCards(filterData("gender", selectGender.value));
+}
+
+function printSpeciesFiltered() {
+  return showCards(filterData("species", selectSpecies.value));
+}
+
+function printStatusFiltered() {
+  return showCards(filterData("status", selectStatus.value))
 }
 
 document.getElementById("btn-order-az").addEventListener("click", printCharacterAZ);
 document.getElementById("btn-order-za").addEventListener("click", printCharacterZA);
-
+selectGender.addEventListener("change", printGenderFiltered);
+selectSpecies.addEventListener("change", printSpeciesFiltered);
+selectStatus.addEventListener("change", printStatusFiltered);

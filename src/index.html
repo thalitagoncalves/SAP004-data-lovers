@@ -25,35 +25,34 @@
     <section class="img-logo">
       <img src="Imagens/logo-rickandmorty.png" alt="logo rickandmorty" class="imagem-logo">
     </section>
-  </header>
-  <aside class="open-menu">
-    <button id="btn-order-az" class="btn">Ordenar A-Z</button>
-    <button id="btn-order-za" class="btn">Ordenar Z-A</button>
-    <select id="select-gender" class="btn">
-      <option value="gender" selected disabled>Gênero</option>
-      <option value="undefined">Indefinido</option>
-      <option value="male">Macho</option>
-      <option value="female">Fêmea</option>
-    </select>
-    <select id="select-species" class="btn">
-      <option value="specie" selected disabled>Espécie</option>
-      <option value="human">Humano</option>
-      <option value="humanoide">Humanoide</option>
-      <option value="alien">Alien</option>
-      <option value="animal">Animal</option>
-    </select>
-    <select id="select-status" class="btn">
-      <option value="status" selected disabled>Status</option>
-      <option value="undefined">Indefinido</option>
-      <option value="alive">Vivo</option>
-      <option value="dead">Morto</option>
-    </select>
-  </aside>
-  <div id="perc" class="info" class="invisible"></div>
-  <main class="scroll">
-    <div id="listening"></div>
-  </main>
-
+   </header>
+    <aside class="open-menu">
+      <button id="btn-order-az" class="btn">Ordenar A-Z</button>
+      <button id="btn-order-za" class="btn">Ordenar Z-A</button>
+      <select class="select-gender btn">
+        <option value="gender" selected disabled>Gênero</option>
+        <option class="select-gender" value="unknown">Indefinido</option>
+        <option class="select-gender" value="Male">Macho</option>
+        <option class="select-gender" value="Female">Fêmea</option>
+      </select>
+      <select class="select-species btn">
+        <option value="specie" selected disabled>Espécie</option>
+        <option class="select-species" value="Human">Humano</option>
+        <option class="select-species" value="Humanoid">Humanoide</option>
+        <option class="select-species" value="Alien">Alien</option>
+        <option class="select-species" value="Animal">Animal</option>
+      </select>
+      <select class="select-status btn">
+        <option value="status" selected disabled>Status</option>
+        <option class="select-status" value="unknown">Indefinido</option>
+        <option class="select-status" value="Alive">Vivo</option>
+        <option class="select-status" value="Dead">Morto</option>
+      </select>  
+    </aside>       
+    <div id= "perc" class="info" class="invisible"></div>
+    <main class="scroll">
+        <div id="listening"></div>
+    </main>
   <footer>
     <p>Desenvolvido por <a href="https://github.com/alessandramarinho" target="_blank">Alessandra Marinho</a> e <a href="https://github.com/thalitagoncalves" target="_blank">Thalita Gonçalves</a></p>
     <p>O código fonte está disponível no <a href="https://alessandramarinho.github.io/SAP004-data-lovers/src/" target="_blank">GitHub</a></p>
@@ -61,5 +60,4 @@
 
   <script src="main.js" type="module"></script>
 </body>
-
 </html>
