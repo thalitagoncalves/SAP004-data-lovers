@@ -1,14 +1,25 @@
-import {sortByAZ, sortByZA, filterData} from './data.js';
+import { sortByAZ, sortByZA, filterData } from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
 function showCards(data) {
   document.getElementById('listening').innerHTML = data.map((item) => `
-    <div class="card-container">
-    <img src="${item.image}" class="card-image">
-    <h3>Nome: ${item.name}</h3>
-    <h3>Status: ${item.status}</h3>
-    <h3>Gênero: ${item.gender}</h3>
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+      <img src="${item.image}">
+       <p><strong> Nome: ${item.name}</strong></p>
+    </div> 
+    <div class="card-back">
+      <ul class="card__list">
+        <li>Nome: <strong>${item.name}</strong></li>
+        <li>Status: <strong>${item.status}</strong></li>
+        <li>Espécie: <strong>${item.species}</strong></li>
+        <li>Gênero: <strong>${item.gender}</strong></li>      
+        <li>Localização: <strong>${item.location}</strong></li>
+      </ul>
+    </div>
   </div>
+</div>  
 `)
 }
 showCards(data.results);
@@ -22,7 +33,7 @@ function printCharacterZA() {
 
 let selectGender = document.querySelector(".select-gender");
 let selectSpecies = document.querySelector(".select-species");
-let selectStatus = document.querySelector(".select-status"); 
+let selectStatus = document.querySelector(".select-status");
 
 function printGenderFiltered() {
   return showCards(filterData("gender", selectGender.value));
