@@ -15,7 +15,7 @@ function showCards(data) {
         <li>Status: <strong>${item.status}</strong></li>
         <li>Espécie: <strong>${item.species}</strong></li>
         <li>Gênero: <strong>${item.gender}</strong></li>      
-        <li>Localização: <strong>${item.location}</strong></li>
+        <li>Localização: <strong>${item.location.name}</strong></li>
       </ul>
     </div>
   </div>
