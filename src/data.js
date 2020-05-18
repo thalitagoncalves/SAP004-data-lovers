@@ -1,20 +1,13 @@
-import data from './data/rickandmorty/rickandmorty.js';
+export const alphabeticOrder = (data) => data.sort((a,z) => a.name > z.name ? 1 : -1);
 
-export const alphabeticOrder = () => data.results.sort((a, z) => {
-    if (a.name > z.name) {
-        return 1;
-    }
-    if (a.name < z.name) {
-        return -1;
-    }
-    return 0;
-});
+export const sortByAZ = (data) => alphabeticOrder(data).slice(0, 494);
 
-export const sortByAZ = () => alphabeticOrder().slice(0, 494);
-
-export const sortByZA = () => sortByAZ().reverse();
+export const sortByZA = (data) => sortByAZ(data).reverse();
   
-export const filterData = (typeData, condition) => data.results.filter((character) => {
+export const filterData = (data,typeData, condition) => data.filter((character) => {
     return (character[typeData] === condition);
 })
 
+export const filterName = (data, search) => data.filter(character => {
+    return character.name.toLowerCase().includes(search.toLowerCase());
+})
