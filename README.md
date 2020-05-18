@@ -25,27 +25,29 @@ A série trata das aventuras de Rick Sanchez, um cientista brilhante (com sério
 
 Com isso em mente, criamos um banco de dados que usa informações fornecidas pela (Rick and Morty API)[https://rickandmortyapi.com/] para facilitar a busca de personagens da série e obter informações dos mesmos através de cards e opções de busca.
 
-Para elaboração deste projeto, foi necessário a construção de HU's (Histórias de Usuários), para nos guiar em relação ao que deveria ser realizado e entregue neste projeto.
+Para elaboração deste projeto, foi _necessário a construção de HU's (Histórias de Usuários),_ para nos guiar em relação ao que deveria ser realizado e entregue neste projeto.
 
 ## 2. O Problema
 
 A série Rick and Morty possui uma grande variedade de personagens, características bem diferentes para cada um, 4 temporadas e um tempo consideravelmente longo entre o lançamento de uma temporada e outra.
 
-Para facilitar a vida dos consumidores dessa série, fizemos uma Dashboard, que permite a busca pelo nome do personagem e uma interação atraves de cards e filtros específicos. O usuário pode então _filtrar seus personagens por gêneros, espécies e status existentes_. Mas não só isso! É possivel ver a porcentagem relacionada a pesquisa dessas caracteristicas quando filtrado.
+Para facilitar a vida dos consumidores dessa série, fizemos um Dashboard, que permite a busca pelo nome do personagem e uma interação através de cards e filtros específicos. O usuário pode então _filtrar seus personagens por gêneros, espécies e status existentes_. Mas não só isso! É possível ver a porcentagem relacionada a pesquisa dessas características quando filtrado.
 
 ## 3. Dataset
 
 O Dataset utilizado foi o da série Rick and Morty, que contém informações diversas (nome, gênero, status, espécie, mundo de origem (localização), dentre outras informações menos relevantes para o objetivo deste projeto específico sobre todos os 493 personagens da série.
 
-O objetivo principal deste projeto é que aprenda a desenhar e construir uma
-interface web onde se possa visualizar e manipular dados, entendendo o que o
-usuário necessita.
+O objetivo principal deste projeto é que aprenda a desenhar e construir uma interface web onde se possa visualizar e manipular dados, entendendo o que o usuário necessita.
 
 ## 4. Usuário
 
 ### Formulário de Pesquisa do Usuário
 
-Para atender as espectativas dos usuários, criamos um formulário de pesquisa, onde foi possível colher informações sucintas para criação do layout da página. Por meio de dados gráficos, podemos identificar o perfil dos nossos usuários:
+Para atender as expectativas dos usuários, criamos um formulário de pesquisa, onde foi possível colher informações sucintas para criação do layout da página. Por meio de dados gráficos, podemos identificar o perfil dos nossos usuários:
+
+Imagens dos graficos***
+
+
 
 ### Historia de Usuário - HU's
 
@@ -88,15 +90,17 @@ Para criar um dashboard, precisamos de cards para mostrar as informações de ma
 
 Utilizamos a ferramenta disponibilizada pelo site figma para construir o nosso protótipo de baixa fidelidade, que pode ser visualizado [aqui].(https://www.figma.com/file/sQVYqqUnz63VlEGrc9hjtb/Untitled)
 
-Este foi o primeiro protótipo.
+Este foi o primeiro protótipo:
 
 ## 6. Testes e Feedbacks de usabilidade
 
-Foram realizados testes de usabilidade com usuários diferentes, onde foi identificada a necessidade de exibir todos os cards, portanto optamos por ter apenas uma página inicial, contendo todos os cards para a visualização da imagem e nome do personagem e atrás do mesmo card as informações sobre as suas características principais,
+Foram realizados testes de usabilidade com usuários diferentes, onde foi identificada a necessidade de exibir todos os cards, portanto optamos por ter apenas uma página inicial, contendo todos os cards para a visualização da imagem e nome do personagem e atrás do mesmo card as informações sobre as suas características principais, alterando assim, o layout da página web.
 
 Para que a pesquisa pudesse ser feita pelo nome, inserimos campo para a digitação, fornecendo a possibilidade ao usuário ao digitar as primeiras letras do nome do personagem, aparecer a lista de opção para que o mesmo possa localizar seu personagem por preferência. Disponibilizamos pesquisa por gênero, status e também por espécie. 
 
 Exibimos também uma parametro que ao clicar em determinado filtragem o usuário saberá em porcentagem quantos personagens dentre todos que aparecem na animação possuem determinada característica.
+
+Este é o resultado final do layout:
 
 ## 7. Resultados
 
