@@ -1,5 +1,3 @@
-import data from './data/rickandmorty/rickandmorty.js';
-
 export const alphabeticOrder = (data) => data.sort((a,z) => a.name > z.name ? 1 : -1);
 
 export const sortByAZ = (data) => alphabeticOrder(data).slice(0, 494);
