@@ -1,4 +1,4 @@
-import { sortByAZ, sortByZA, filterData } from './data.js';
+import {sortByAZ, sortByZA, filterData, filterName/* , computeStats */} from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
 function showCards(data) {
@@ -24,27 +24,32 @@ function showCards(data) {
 }
 showCards(data.results);
 
-function printCharacterAZ() {
-  return showCards(sortByAZ());
-}
-function printCharacterZA() {
-  return showCards(sortByZA());
-}
-
 let selectGender = document.querySelector(".select-gender");
 let selectSpecies = document.querySelector(".select-species");
-let selectStatus = document.querySelector(".select-status");
+let selectStatus = document.querySelector(".select-status"); 
+let searchName = document.getElementById("typed-text");
+
+function printCharacterAZ() {
+  return showCards(sortByAZ(data.results));
+}
+function printCharacterZA() {
+  return showCards(sortByZA(data.results));
+}
 
 function printGenderFiltered() {
-  return showCards(filterData("gender", selectGender.value));
+  return showCards(filterData(data.results, "gender", selectGender.value));
 }
 
 function printSpeciesFiltered() {
-  return showCards(filterData("species", selectSpecies.value));
+  return showCards(filterData(data.results, "species", selectSpecies.value));
 }
 
 function printStatusFiltered() {
-  return showCards(filterData("status", selectStatus.value))
+  return showCards(filterData(data.results, "status", selectStatus.value))
+}
+
+function filterByName() {
+  return showCards(filterName(data.results, searchName.value));
 }
 
 document.getElementById("btn-order-az").addEventListener("click", printCharacterAZ);
@@ -52,3 +57,9 @@ document.getElementById("btn-order-za").addEventListener("click", printCharacter
 selectGender.addEventListener("change", printGenderFiltered);
 selectSpecies.addEventListener("change", printSpeciesFiltered);
 selectStatus.addEventListener("change", printStatusFiltered);
+searchName.addEventListener("keypress", filterByName);
+searchName.addEventListener("keydown", event => {
+  if (event.keyCode === 8) {
+    return showCards(data.results);
+  }
+})
