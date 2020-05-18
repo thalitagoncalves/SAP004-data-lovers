@@ -1,4 +1,4 @@
-import {sortByAZ, sortByZA, filterData, filterName} from './data.js';
+import {sortByAZ, sortByZA, filterData, filterName, computeStats} from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
 function showCards(data) {
