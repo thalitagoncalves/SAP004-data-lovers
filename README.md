@@ -2,7 +2,7 @@
 
 Rick and Morty Dashboard.
 
-Acesse a página clicando [aqui](https://alessandramarinho.github.io/SAP004-data-lovers/src/)
+Acesse a página clicando [aqui](https://thalitagoncalves.github.io/SAP004-data-lovers/)
 
 ## Índice
 
@@ -25,13 +25,13 @@ A série trata das aventuras de Rick Sanchez, um cientista brilhante (com sério
 
 Com isso em mente, criamos um banco de dados que usa informações fornecidas pela (Rick and Morty API)[https://rickandmortyapi.com/] para facilitar a busca de personagens da série e obter informações dos mesmos através de cards e opções de busca.
 
-Para elaboração deste projeto, foi _necessário a construção de HU's (Histórias de Usuários),_ para nos guiar em relação ao que deveria ser realizado e entregue neste projeto.
+Para elaboração deste projeto, foi _necessário a construção de Histórias de Usuários_ para nos guiar em relação ao que deveria ser realizado e entregue neste projeto.
 
 ## 2. O Problema
 
 A série Rick and Morty possui uma grande variedade de personagens, características bem diferentes para cada um, 4 temporadas e um tempo consideravelmente longo entre o lançamento de uma temporada e outra.
 
-Para facilitar a vida dos consumidores dessa série, fizemos um Dashboard, que permite a busca pelo nome do personagem e uma interação através de cards e filtros específicos. O usuário pode então _filtrar seus personagens por gêneros, espécies e status existentes_. Mas não só isso! É possível ver a porcentagem relacionada a pesquisa dessas características quando filtrado.
+Para facilitar a vida dos consumidores dessa série, fizemos um Dashboard, que permite a busca pelo nome do personagem e uma interação através de cards e filtros específicos. O usuário pode, então, _filtrar seus personagens por gêneros, espécies e status existentes_. Mas não só isso! É possível ver o número de personagens relacionados à pesquisa dessas características quando filtrado.
 
 ## 3. Dataset
 
@@ -49,7 +49,7 @@ Imagens dos graficos***
 
 
 
-### Historia de Usuário - HU's
+### Historia de Usuário
 
 #### História 1
 _"Eu como usuário gostaria de ter visibilidade de todos os personagens da série na tela principal onde consiga ver em ordem alfabética"_
@@ -115,7 +115,7 @@ Aprendemos a desenhar e construir uma interface web onde se possa visualizar e m
 
 ## 8. Ferramentas Utilizadas
 
-* Vanilla JS
+* JavaScript
 * HTML 5
 * CSS
-* Para a organização e planejamento do projeto, utilizamos a ferramentra *TRELLO*. Acesse [aqui].(https://trello.com/b/GV9wLssf/data-lovers)
+* Node.JS
