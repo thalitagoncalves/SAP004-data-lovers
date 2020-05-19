@@ -119,10 +119,13 @@ button:hover {
     text-align: center;
 }
 .card-back{
+    display: flex;
     transform: rotateY(180deg);
     background-color: #31B0CC;
-    text-align: center;
-    color: #7ffa67;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: black;
 }
 footer {
     font-size: 12px;

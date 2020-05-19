@@ -1,4 +1,4 @@
-import {sortByAZ, sortByZA, filterData, filterName/* , computeStats */} from './data.js';
+import {sortByAZ, sortByZA, filterData, filterName, computeStats} from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
 function showCards(data) {
@@ -24,10 +24,11 @@ function showCards(data) {
 }
 showCards(data.results);
 
-let selectGender = document.querySelector(".select-gender");
-let selectSpecies = document.querySelector(".select-species");
-let selectStatus = document.querySelector(".select-status"); 
-let searchName = document.getElementById("typed-text");
+const selectGender = document.querySelector(".select-gender");
+const selectSpecies = document.querySelector(".select-species");
+const selectStatus = document.querySelector(".select-status"); 
+const searchName = document.getElementById("typed-text");
+
 
 function printCharacterAZ() {
   return showCards(sortByAZ(data.results));
@@ -37,14 +38,17 @@ function printCharacterZA() {
 }
 
 function printGenderFiltered() {
+  document.getElementById("show-calculation").innerHTML = `O número de personagens dessa categoria é ${computeStats(data.results, "gender", selectGender.value)}`
   return showCards(filterData(data.results, "gender", selectGender.value));
 }
 
 function printSpeciesFiltered() {
+  document.getElementById("show-calculation").innerHTML = `O número de personagens dessa categoria é ${computeStats(data.results, "species", selectSpecies.value)}`
   return showCards(filterData(data.results, "species", selectSpecies.value));
 }
 
 function printStatusFiltered() {
+  document.getElementById("show-calculation").innerHTML = `O número de personagens dessa categoria é ${computeStats(data.results, "status", selectStatus.value)}`
   return showCards(filterData(data.results, "status", selectStatus.value))
 }
 
