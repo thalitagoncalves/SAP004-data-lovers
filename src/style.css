@@ -11,7 +11,7 @@ body{
 }
 .imagem-logo{
     width: 60%;
-    margin-left: 15%;
+    margin-left: 8%;
     top: 50px;
     margin-bottom: 30px;
 }
@@ -22,8 +22,7 @@ body{
 }
 .search-text {
     float: right;
-    margin-top: 20px;
-    margin: 20px 60px 5.5px 0px;
+    margin: 20px 0px;
     display: flex;
     font-size: 20px;
     font-family: 'Amatic SC', cursive;
@@ -36,7 +35,7 @@ body{
 }
 .open-menu {
     position: relative;
-    left: 106px;
+    /* left: 106px; */
     font-family: 'Amatic SC', cursive;
     font-weight: bold;
     font-size: 25px;
@@ -67,11 +66,13 @@ button:hover {
 }
 
 #show-calculation {
-    display: inline-block;
-    margin-top: 3%;
-    border: 2px solid red;
-    width: fit-content;
-    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    margin: 2% 30% 2% 30%;
+    background-color: #31B0CC;
+    border: 5px solid #D4D952;
 }
 
 #listening {
@@ -141,7 +142,7 @@ button:hover {
 footer {
     font-size: 12px;
     bottom: 0px;
-    width: 100%;
+    /* width: 100%; */
     padding: 14px;
     text-align: center;
     background-color: #3e9bb7;
