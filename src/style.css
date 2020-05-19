@@ -17,6 +17,8 @@ body{
 }
 .img-logo {
     background-color: #160A40;
+    padding: 0%;
+    margin: 0%;
 }
 .search-text {
     float: right;
@@ -63,6 +65,15 @@ body{
 button:hover {
     background-color: #25B01C
 }
+
+#show-calculation {
+    display: inline-block;
+    margin-top: 3%;
+    border: 2px solid red;
+    width: fit-content;
+    align-items: center;
+}
+
 #listening {
     padding: 0em 12em;
     text-align: center;

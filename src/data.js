@@ -15,3 +15,4 @@ export const filterName = (data, search) => data.filter(character => {
 export const computeStats = (data,typeData, condition) => data.reduce((initialType, totalType) => {
     return initialType + (totalType[typeData] === condition);
 },0)
+
