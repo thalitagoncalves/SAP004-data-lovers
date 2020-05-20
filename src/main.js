@@ -33,23 +33,28 @@ const showCalculation = document.getElementById("show-calculation");
 
 
 function printCharacterAZ() {
+  showCalculation.style.display = "none";
   return showCards(sortByAZ(data.results));
 }
 function printCharacterZA() {
+  showCalculation.style.display = "none";
   return showCards(sortByZA(data.results));
 }
 
 function printGenderFiltered() {
+  showCalculation.style.display = "flex";
   showCalculation.innerHTML = `O número de personagens dessa categoria é ${computeStats(data.results, "gender", selectGender.value)}`
   return showCards(filterData(data.results, "gender", selectGender.value));
 }
 
 function printSpeciesFiltered() {
+  showCalculation.style.display = "flex";
   showCalculation.innerHTML = `O número de personagens dessa categoria é ${computeStats(data.results, "species", selectSpecies.value)}`
   return showCards(filterData(data.results, "species", selectSpecies.value));
 }
 
 function printStatusFiltered() {
+  showCalculation.style.display = "flex";
   showCalculation.innerHTML = `O número de personagens dessa categoria é ${computeStats(data.results, "status", selectStatus.value)}`
   return showCards(filterData(data.results, "status", selectStatus.value))
 }
@@ -58,32 +63,12 @@ function filterByName() {
   return showCards(filterName(data.results, searchName.value));
 }
 
-document.getElementById("btn-order-az").addEventListener("click", function click() {
-  printCharacterAZ();
-  showCalculation.style.display = "none";
-});
-document.getElementById("btn-order-za").addEventListener("click", function click() {
-  printCharacterZA();
-  showCalculation.style.display = "none";
-});
-
-selectGender.addEventListener("change", function click() {
-  printGenderFiltered();
-  showCalculation.style.display = "flex";
-});
-
-selectSpecies.addEventListener("change", function click() {
-  printSpeciesFiltered();
-  showCalculation.style.display = "flex";
-});
-
-selectStatus.addEventListener("change", function click() {
-  printStatusFiltered();
-  showCalculation.style.display = "flex";
-});
-
+document.getElementById("btn-order-az").addEventListener("click", printCharacterAZ);
+document.getElementById("btn-order-za").addEventListener("click", printCharacterZA);
+selectGender.addEventListener("change", printGenderFiltered);
+selectSpecies.addEventListener("change", printSpeciesFiltered);
+selectStatus.addEventListener("change", printStatusFiltered);
 searchName.addEventListener("keypress", filterByName);
-
 searchName.addEventListener("keydown", event => {
   if (event.keyCode === 8) {
     return showCards(data.results);
