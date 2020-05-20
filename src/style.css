@@ -1,6 +1,8 @@
 body{
-    background-color: #033E47;
+    background-image: url(Imagens/background-fundo.jpg); 
+    background-color: black;
     background-attachment: fixed;
+    background-size: cover;
     padding: 0%;
     margin: 0%;
     font-size: 100%;
