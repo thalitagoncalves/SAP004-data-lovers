@@ -22,12 +22,14 @@ function showCards(data) {
 </div>  
 `)
 }
+
 showCards(data.results);
 
 const selectGender = document.querySelector(".select-gender");
 const selectSpecies = document.querySelector(".select-species");
 const selectStatus = document.querySelector(".select-status"); 
 const searchName = document.getElementById("typed-text");
+const showCalculation = document.getElementById("show-calculation");
 
 
 function printCharacterAZ() {
@@ -38,17 +40,17 @@ function printCharacterZA() {
 }
 
 function printGenderFiltered() {
-  document.getElementById("show-calculation").innerHTML = `O número de personagens dessa categoria é ${computeStats(data.results, "gender", selectGender.value)}`
+  showCalculation.innerHTML = `O número de personagens dessa categoria é ${computeStats(data.results, "gender", selectGender.value)}`
   return showCards(filterData(data.results, "gender", selectGender.value));
 }
 
 function printSpeciesFiltered() {
-  document.getElementById("show-calculation").innerHTML = `O número de personagens dessa categoria é ${computeStats(data.results, "species", selectSpecies.value)}`
+  showCalculation.innerHTML = `O número de personagens dessa categoria é ${computeStats(data.results, "species", selectSpecies.value)}`
   return showCards(filterData(data.results, "species", selectSpecies.value));
 }
 
 function printStatusFiltered() {
-  document.getElementById("show-calculation").innerHTML = `O número de personagens dessa categoria é ${computeStats(data.results, "status", selectStatus.value)}`
+  showCalculation.innerHTML = `O número de personagens dessa categoria é ${computeStats(data.results, "status", selectStatus.value)}`
   return showCards(filterData(data.results, "status", selectStatus.value))
 }
 
@@ -56,12 +58,32 @@ function filterByName() {
   return showCards(filterName(data.results, searchName.value));
 }
 
-document.getElementById("btn-order-az").addEventListener("click", printCharacterAZ);
-document.getElementById("btn-order-za").addEventListener("click", printCharacterZA);
-selectGender.addEventListener("change", printGenderFiltered);
-selectSpecies.addEventListener("change", printSpeciesFiltered);
-selectStatus.addEventListener("change", printStatusFiltered);
+document.getElementById("btn-order-az").addEventListener("click", function click() {
+  printCharacterAZ();
+  showCalculation.style.display = "none";
+});
+document.getElementById("btn-order-za").addEventListener("click", function click() {
+  printCharacterZA();
+  showCalculation.style.display = "none";
+});
+
+selectGender.addEventListener("change", function click() {
+  printGenderFiltered();
+  showCalculation.style.display = "flex";
+});
+
+selectSpecies.addEventListener("change", function click() {
+  printSpeciesFiltered();
+  showCalculation.style.display = "flex";
+});
+
+selectStatus.addEventListener("change", function click() {
+  printStatusFiltered();
+  showCalculation.style.display = "flex";
+});
+
 searchName.addEventListener("keypress", filterByName);
+
 searchName.addEventListener("keydown", event => {
   if (event.keyCode === 8) {
     return showCards(data.results);

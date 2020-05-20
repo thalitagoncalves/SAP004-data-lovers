@@ -66,13 +66,16 @@ button:hover {
 }
 
 #show-calculation {
-    display: flex;
+    display: none;
     justify-content: center;
     font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    font-size: 25px;
     text-align: center;
     margin: 2% 30% 2% 30%;
     background-color: #31B0CC;
     border: 5px solid #D4D952;
+    border-radius: 9px;
 }
 
 #listening {
@@ -142,7 +145,6 @@ button:hover {
 footer {
     font-size: 12px;
     bottom: 0px;
-    /* width: 100%; */
     padding: 14px;
     text-align: center;
     background-color: #3e9bb7;
