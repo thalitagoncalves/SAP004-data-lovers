@@ -45,8 +45,13 @@ O objetivo principal deste projeto é que aprenda a desenhar e construir uma int
 
 Para atender as expectativas dos usuários, criamos um formulário de pesquisa, onde foi possível colher informações sucintas para criação do layout da página. Por meio de dados gráficos, podemos identificar o perfil dos nossos usuários:
 
-Imagens dos graficos***
+![ConteúdosAudivisuais](src/Imagens/grafico1_hus.png)
 
+![ConteúdoAtrativo](src/Imagens/grafico2_hus.png)
+
+![UtilizaçãoDoUsuário](src/Imagens/grafico3_hus.png)
+
+![InteratividaComOsFiltros](src/Imagens/grafico4_hus.png)
 
 
 ### Historia de Usuário
@@ -92,6 +97,8 @@ Utilizamos a ferramenta disponibilizada pelo site figma para construir o nosso p
 
 Este foi o primeiro protótipo:
 
+![PrimeiroPrototipo](src/Imagens/Prot_baixa_fidelidade.png)
+
 ## 6. Testes e Feedbacks de usabilidade
 
 Foram realizados testes de usabilidade com usuários diferentes, onde foi identificada a necessidade de exibir todos os cards, portanto optamos por ter apenas uma página inicial, contendo todos os cards para a visualização da imagem e nome do personagem e atrás do mesmo card as informações sobre as suas características principais, alterando assim, o layout da página web.
@@ -102,6 +109,20 @@ Exibimos também uma parametro que ao clicar em determinado filtragem o usuário
 
 Este é o resultado final do layout:
 
+> Versão para computadores.
+
+![PrototipoFinal]()
+
+#### Responsividade
+
+Adequamos o site a ser _responsivo_, ou seja, ele pode ser visualizado sem problemas a partir de diversos tamanhos de tela: celulares, tablets, notebooks, etc. Abaixo imagens do layout:
+
+> Versão para celulares e tablets.
+
+![ResponsividadeCelular](src/Imagens/tela_celular.png)
+
+![ResponsividadeTablet](src/Imagens/tela_tablet.png)
+
 ## 7. Resultados
 
 Aprendemos a desenhar e construir uma interface web onde se possa visualizar e manipular dados, entendendo o que o usuário necessita.
@@ -109,6 +130,7 @@ Aprendemos a desenhar e construir uma interface web onde se possa visualizar e m
 * Criamos histórias do usuário com base nas *necessidades*  de supostos fãs de Rick and Morty.
 * As definitions of done e os critérios de aceitação estavam relacionados, para todas as histórias, em manipular o dataset, extrair dele as informações necessárias para a realização da tarefa, construção de funções para manipular estas informações, o retorno dos dados trabalhados para o usuário e por fim os testes unitários para as funções do arquivo data.js;
 * Definimos quais dados utilizar como base no *entendimento do usuário*;
+* Criamos responsividade para o layout da página para se adequar a outros dispositivos móveis (celulares, tablets e notebooks);
 * Manipulamos *arrays e objetos*;
 * Manipulamos o *DOM*;
 * Manejamos os eventos *DOM* para permitir interação com o usuário (filtros e busca);
