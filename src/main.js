@@ -22,33 +22,40 @@ function showCards(data) {
 </div>  
 `)
 }
+
 showCards(data.results);
 
 const selectGender = document.querySelector(".select-gender");
 const selectSpecies = document.querySelector(".select-species");
 const selectStatus = document.querySelector(".select-status"); 
 const searchName = document.getElementById("typed-text");
+const showCalculation = document.getElementById("show-calculation");
 
 
 function printCharacterAZ() {
+  showCalculation.style.display = "none";
   return showCards(sortByAZ(data.results));
 }
 function printCharacterZA() {
+  showCalculation.style.display = "none";
   return showCards(sortByZA(data.results));
 }
 
 function printGenderFiltered() {
-  document.getElementById("show-calculation").innerHTML = `O número de personagens dessa categoria é ${computeStats(data.results, "gender", selectGender.value)}`
+  showCalculation.style.display = "flex";
+  showCalculation.innerHTML = `O número de personagens dessa categoria é ${computeStats(data.results, "gender", selectGender.value)}`
   return showCards(filterData(data.results, "gender", selectGender.value));
 }
 
 function printSpeciesFiltered() {
-  document.getElementById("show-calculation").innerHTML = `O número de personagens dessa categoria é ${computeStats(data.results, "species", selectSpecies.value)}`
+  showCalculation.style.display = "flex";
+  showCalculation.innerHTML = `O número de personagens dessa categoria é ${computeStats(data.results, "species", selectSpecies.value)}`
   return showCards(filterData(data.results, "species", selectSpecies.value));
 }
 
 function printStatusFiltered() {
-  document.getElementById("show-calculation").innerHTML = `O número de personagens dessa categoria é ${computeStats(data.results, "status", selectStatus.value)}`
+  showCalculation.style.display = "flex";
+  showCalculation.innerHTML = `O número de personagens dessa categoria é ${computeStats(data.results, "status", selectStatus.value)}`
   return showCards(filterData(data.results, "status", selectStatus.value))
 }
 
