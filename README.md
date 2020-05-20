@@ -111,7 +111,7 @@ Este é o resultado final do layout:
 
 > Versão para computadores.
 
-![PrototipoFinal]()
+![PrototipoFinal](src/Imagens/versaodesktop.png)
 
 #### Responsividade
 
