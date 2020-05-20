@@ -2,7 +2,7 @@
 
 Rick and Morty Dashboard.
 
-Acesse a página clicando [aqui](https://thalitagoncalves.github.io/SAP004-data-lovers/src)
+Acesse a página clicando [aqui](https://thalitagoncalves.github.io/SAP004-data-lovers/src/)
 
 ## Índice
 
