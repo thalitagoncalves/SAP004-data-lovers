@@ -93,7 +93,7 @@ A partir das protopersonas e do banco de dados desenvolvemos um layout que acred
 
 Para criar um dashboard, precisamos de cards para mostrar as informações de maneira clara e campos para o usuário interagir com os dados (inputs - botões - campos para digitação).
 
-Utilizamos a ferramenta disponibilizada pelo site figma para construir o nosso protótipo de baixa fidelidade, que pode ser visualizado [aqui].(https://www.figma.com/file/sQVYqqUnz63VlEGrc9hjtb/Untitled)
+Utilizamos a ferramenta disponibilizada pelo site figma para construir o nosso protótipo de baixa fidelidade, que pode ser visualizado [aqui](https://www.figma.com/file/sQVYqqUnz63VlEGrc9hjtb/Untitled)
 
 Este foi o primeiro protótipo:
 
