@@ -23,7 +23,7 @@ Bem vindo(a) a Dashboard de personagens da série **Rick e Morty**!
 
 A série trata das aventuras de Rick Sanchez, um cientista brilhante (com sérios problemas de alcoolismo) e seu sobrinho Morty Smith (não tão brilhante) através de galáxias e realidades paralelas onde encontram todos os tipos de personagens estranhos e, inclusive, outras versões de si mesmos. Após vários episódios de aventuras (até a entrega desse projeto) foram introduzidos 493 personagens diferentes na série e, vamos ser sinceros, fica difícil acompanhar o destino de cada personagem - especialmente quando vários também se chamam Rick e Morty e acontecem inusitadas trocas de realidades!
 
-Com isso em mente, criamos um banco de dados que usa informações fornecidas pela (Rick and Morty API)[https://rickandmortyapi.com/] para facilitar a busca de personagens da série e obter informações dos mesmos através de cards e opções de busca.
+Com isso em mente, criamos um banco de dados que usa informações fornecidas pela [Rick and Morty API](https://rickandmortyapi.com/) para facilitar a busca de personagens da série e obter informações dos mesmos através de cards e opções de busca.
 
 Para elaboração deste projeto, foi _necessário a construção de Histórias de Usuários_ para nos guiar em relação ao que deveria ser realizado e entregue neste projeto.
 
